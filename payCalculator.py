@@ -22,7 +22,7 @@ def calculatePay():
     else:
         gross_pay = total_hours * hourly_rate
     
-    print(gross_pay)
+    print(f"Pay: {gross_pay}")
 
     # end assignment
 
