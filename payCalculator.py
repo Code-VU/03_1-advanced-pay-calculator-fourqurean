@@ -7,6 +7,7 @@ def calculatePay():
 
     try:
         total_hours = float(total_hours)
+        
     except:
         print("Error, please enter numeric input")
         return
