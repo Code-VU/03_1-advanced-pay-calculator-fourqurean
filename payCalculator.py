@@ -7,18 +7,13 @@ def calculatePay():
 
     try:
         total_hours = float(total_hours)
+        hourly_rate = float(hourly_rate)
         
     except:
         print("Error, please enter numeric input")
         return
 
-    try:
-        hourly_rate = float(hourly_rate)
-    except:
-        print("Error, please enter numeric input")
-        return
-
-    # Logic for overtime pay
+      # Logic for overtime pay
     if total_hours > 40:
         overtime = total_hours - 40
         normal_hours = 40
